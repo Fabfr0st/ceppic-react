@@ -55,7 +55,8 @@ function App() {
           ))}
         </ul>
       </main>
-      <Compteur />
+      <Compteur increment={1}/>
+      <Compteur increment={10} />
       <Footer />
     </div>
   );
