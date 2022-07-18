@@ -34,7 +34,7 @@ function App() {
         {Message}
         {Message2}
         {Calcul}
-        {LoggedIn && <p>Vous êtes connecté !</p>}
+        {/* {LoggedIn && <p>Vous êtes connecté !</p>} */}
         {LoggedIn ? (
           <p>Vous êtes connecté !</p>
         ) : (
