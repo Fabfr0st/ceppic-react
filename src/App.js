@@ -20,7 +20,6 @@ function App() {
         <Compteur increment={1} />
         <Compteur increment={10} />
       </main>
-
       <Footer />
     </div>
   );
