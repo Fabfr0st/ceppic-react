@@ -3,57 +3,24 @@ import minsc from "./Minsc.jpg";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Compteur from "./components/Compteur";
+import Message from "./components/Message";
+import Calcul from "./components/Calcul";
+import Connexion from "./components/Connexion";
+import Voiture from "./components/Voiture";
 
 function App() {
-  const Message = <h1>*Squeak* Boo says that he was just doing his job.</h1>;
-  const Message2 = (
-    <div>
-      <h2>Vise les yeux, Boo! Vise les yeux! *Squeak*</h2>
-      <p>
-        Camaraderie, adventure, and steel on steel. The stuff of legend! Right
-        Boo?
-      </p>
-    </div>
-  );
-  const Calcul = <h2>Cette opération 2*6 vaut {2 * 6}</h2>;
-  const LoggedIn = false;
-  const Voitures = ["Ford", "Audi", "Honda"];
-  const Voitures2 = [
-    { id: 1, nom: "Ford" },
-    { id: 2, nom: "Audi" },
-    { id: 3, nom: "Honda" },
-  ];
-
   return (
     <div className="App">
       <Header logo={minsc} />
       <main>
-        {Message}
-        {Message2}
-        {Calcul}
-        {/* {LoggedIn && <p>Vous êtes connecté !</p>} */}
-        {LoggedIn ? (
-          <p>Vous êtes connecté !</p>
-        ) : (
-          <p>Vous devez réunir votre groupe avant d'aller plus loin.</p>
-        )}
-        <ul>
-          {Voitures.map((voiture) => (
-            <li id={voiture} key={voiture}>
-              {voiture}
-            </li>
-          ))}
-        </ul>
-        <ul>
-          {Voitures2.map((voiture) => (
-            <li id={voiture.id} key={voiture.id}>
-              {voiture.nom}
-            </li>
-          ))}
-        </ul>
+        <Message />
+        <Calcul />
+        <Connexion />
+        <Voiture />
+        <Compteur increment={1} />
+        <Compteur increment={10} />
       </main>
-      <Compteur increment={1} />
-      <Compteur increment={10} />
+
       <Footer />
     </div>
   );
