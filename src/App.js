@@ -5,9 +5,6 @@ import Footer from "./components/Footer";
 import Compteur from "./components/Compteur";
 
 function App() {
-  
-  
-
   const Message = <h1>*Squeak* Boo says that he was just doing his job.</h1>;
   const Message2 = (
     <div>
@@ -38,7 +35,7 @@ function App() {
         {LoggedIn ? (
           <p>Vous êtes connecté !</p>
         ) : (
-          <p>Vous n'êtes pas connecté !</p>
+          <p>Vous devez réunir votre groupe avant d'aller plus loin.</p>
         )}
         <ul>
           {Voitures.map((voiture) => (
@@ -55,7 +52,7 @@ function App() {
           ))}
         </ul>
       </main>
-      <Compteur increment={1}/>
+      <Compteur increment={1} />
       <Compteur increment={10} />
       <Footer />
     </div>
