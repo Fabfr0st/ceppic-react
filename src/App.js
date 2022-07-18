@@ -2,8 +2,12 @@ import "./App.css";
 import minsc from "./Minsc.jpg";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Compteur from "./components/Compteur";
 
 function App() {
+  
+  
+
   const message = <h1>*Squeak* Boo says that he was just doing his job.</h1>;
   const message2 = (
     <div>
@@ -51,6 +55,7 @@ function App() {
           ))}
         </ul>
       </main>
+      <Compteur />
       <Footer />
     </div>
   );
