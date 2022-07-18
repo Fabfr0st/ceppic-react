@@ -1,4 +1,5 @@
 import minsc from "./Minsc.jpg";
+import "./Header.css"
 
 export default function Header() {
   const minscDesc = "Rôdeur le plus connu de Faerûn";
