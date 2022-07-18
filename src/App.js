@@ -6,7 +6,7 @@ function App() {
   const message = <h1>*Squeak* Boo says that he was just doing his job.</h1>;
   const message2 = (
     <div>
-      <h2>Vise les yeux Boo! Vise les yeux! *Squeak*</h2>
+      <h2>Vise les yeux, Boo! Vise les yeux! *Squeak*</h2>
       <p>
         Camaraderie, adventure, and steel on steel. The stuff of legend! Right
         Boo?
@@ -22,28 +22,43 @@ function App() {
     { id: 3, nom: "Honda" },
   ];
 
+  function Header() {
+    return (
+      <header>
+        <img src={minsc} alt={minscDesc}></img>
+        <h1>Rôdeur le plus connu de Faerûn</h1>
+      </header>
+    );
+  }
+
   return (
     <div className="App">
-      <img src={minsc} alt={minscDesc}></img>
-      {message}
-      {message2}
-      {calcul}
-      {loggedIn && <p>Vous êtes connecté !</p>}
-      {loggedIn ? <p>Vous êtes connecté !</p> : <p>Vous n'êtes pas connecté !</p>}
-      <ul>
-        {voitures.map((voiture) => (
-          <li id={voiture} key={voiture}>
-            {voiture}
-          </li>
-        ))}
-      </ul>
-      <ul>
-        {voitures2.map((voiture) => (
-          <li id={voiture.id} key={voiture.id}>
-            {voiture.nom}
-          </li>
-        ))}
-      </ul>
+      <Header />
+      <main>
+        {message}
+        {message2}
+        {calcul}
+        {loggedIn && <p>Vous êtes connecté !</p>}
+        {loggedIn ? (
+          <p>Vous êtes connecté !</p>
+        ) : (
+          <p>Vous n'êtes pas connecté !</p>
+        )}
+        <ul>
+          {voitures.map((voiture) => (
+            <li id={voiture} key={voiture}>
+              {voiture}
+            </li>
+          ))}
+        </ul>
+        <ul>
+          {voitures2.map((voiture) => (
+            <li id={voiture.id} key={voiture.id}>
+              {voiture.nom}
+            </li>
+          ))}
+        </ul>
+      </main>
     </div>
   );
 }
