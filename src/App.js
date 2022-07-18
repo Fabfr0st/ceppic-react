@@ -8,8 +8,8 @@ function App() {
   
   
 
-  const message = <h1>*Squeak* Boo says that he was just doing his job.</h1>;
-  const message2 = (
+  const Message = <h1>*Squeak* Boo says that he was just doing his job.</h1>;
+  const Message2 = (
     <div>
       <h2>Vise les yeux, Boo! Vise les yeux! *Squeak*</h2>
       <p>
@@ -18,10 +18,10 @@ function App() {
       </p>
     </div>
   );
-  const calcul = <h2>Cette opération 2*6 vaut {2 * 6}</h2>;
-  const loggedIn = false;
-  const voitures = ["Ford", "Audi", "Honda"];
-  const voitures2 = [
+  const Calcul = <h2>Cette opération 2*6 vaut {2 * 6}</h2>;
+  const LoggedIn = false;
+  const Voitures = ["Ford", "Audi", "Honda"];
+  const Voitures2 = [
     { id: 1, nom: "Ford" },
     { id: 2, nom: "Audi" },
     { id: 3, nom: "Honda" },
@@ -31,24 +31,24 @@ function App() {
     <div className="App">
       <Header logo={minsc} />
       <main>
-        {message}
-        {message2}
-        {calcul}
-        {loggedIn && <p>Vous êtes connecté !</p>}
-        {loggedIn ? (
+        {Message}
+        {Message2}
+        {Calcul}
+        {LoggedIn && <p>Vous êtes connecté !</p>}
+        {LoggedIn ? (
           <p>Vous êtes connecté !</p>
         ) : (
           <p>Vous n'êtes pas connecté !</p>
         )}
         <ul>
-          {voitures.map((voiture) => (
+          {Voitures.map((voiture) => (
             <li id={voiture} key={voiture}>
               {voiture}
             </li>
           ))}
         </ul>
         <ul>
-          {voitures2.map((voiture) => (
+          {Voitures2.map((voiture) => (
             <li id={voiture.id} key={voiture.id}>
               {voiture.nom}
             </li>
