@@ -1,7 +1,8 @@
-import logo from "./logo.svg";
+import minsc from "./Minsc.jpg";
 import "./App.css";
 
 function App() {
+  const minscDesc = "Rôdeur le plus connu de Faerûn";
   const message = <h1>*Squeak* Boo says that he was just doing his job.</h1>;
   const message2 = (
     <div>
@@ -13,7 +14,7 @@ function App() {
     </div>
   );
   const calcul = <h2>Cette opération 2*6 vaut {2 * 6}</h2>;
-  const loggedIn = true;
+  const loggedIn = false;
   const voitures = ["Ford", "Audi", "Honda"];
   const voitures2 = [
     { id: 1, nom: "Ford" },
@@ -23,10 +24,12 @@ function App() {
 
   return (
     <div className="App">
+      <img src={minsc} alt={minscDesc}></img>
       {message}
       {message2}
       {calcul}
       {loggedIn && <p>Vous êtes connecté !</p>}
+      {loggedIn ? <p>Vous êtes connecté !</p> : <p>Vous n'êtes pas connecté !</p>}
       <ul>
         {voitures.map((voiture) => (
           <li id={voiture} key={voiture}>
