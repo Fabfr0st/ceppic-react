@@ -1,5 +1,6 @@
 import "./App.css";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   const message = <h1>*Squeak* Boo says that he was just doing his job.</h1>;
@@ -49,6 +50,7 @@ function App() {
           ))}
         </ul>
       </main>
+      <Footer />
     </div>
   );
 }
