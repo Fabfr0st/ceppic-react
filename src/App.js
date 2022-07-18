@@ -1,4 +1,5 @@
 import "./App.css";
+import minsc from "./Minsc.jpg";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -24,7 +25,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header logo={minsc} />
       <main>
         {message}
         {message2}
