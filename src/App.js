@@ -1,8 +1,7 @@
-import minsc from "./Minsc.jpg";
 import "./App.css";
+import Header from "./components/Header";
 
 function App() {
-  const minscDesc = "Rôdeur le plus connu de Faerûn";
   const message = <h1>*Squeak* Boo says that he was just doing his job.</h1>;
   const message2 = (
     <div>
@@ -21,15 +20,6 @@ function App() {
     { id: 2, nom: "Audi" },
     { id: 3, nom: "Honda" },
   ];
-
-  function Header() {
-    return (
-      <header>
-        <img src={minsc} alt={minscDesc}></img>
-        <h1>Rôdeur le plus connu de Faerûn</h1>
-      </header>
-    );
-  }
 
   return (
     <div className="App">
