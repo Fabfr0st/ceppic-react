@@ -10,6 +10,7 @@ export default function UserCard({ utilisateur }) {
 
     ul {
       list-style: none;
+      padding-left: 0px;
     }
 
     div:hover {
