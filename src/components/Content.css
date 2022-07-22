@@ -2,5 +2,8 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#content {
   margin: 1rem;
 }
