@@ -12,8 +12,6 @@ export default function Compteur({ increment }) {
         ) : (
           <p></p>
         )}
-      </div>
-      <div>
         <button onClick={() => setCount(count + increment)}>Incrémenter</button>
       </div>
     </section>
