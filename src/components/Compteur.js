@@ -3,6 +3,10 @@ import { useState } from "react";
 export default function Compteur({ increment }) {
   const [count, setCount] = useState(0);
 
+  function handleIncrement() {
+    setCount(count + increment)
+  }
+
   return (
     <section className="compteur">
       <div>
@@ -12,7 +16,7 @@ export default function Compteur({ increment }) {
         ) : (
           <p></p>
         )}
-        <button onClick={() => setCount(count + increment)}>Incrémenter</button>
+        <button onClick={handleIncrement}>Incrémenter</button>
       </div>
     </section>
   );
