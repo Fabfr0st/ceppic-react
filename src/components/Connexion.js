@@ -6,7 +6,7 @@ export default function Connexion() {
       {LoggedIn ? (
         <p> Vous êtes connecté!</p>
       ) : (
-        <p>Vous devez réunir votre groupe avant d'aller plus loin.</p>
+        <p>"Vous devez réunir votre groupe avant d'aller plus loin."</p>
       )}
     </section>
   );
