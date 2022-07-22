@@ -5,6 +5,7 @@ export default function UserCard({ utilisateur }) {
     div {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       transition: 0.3s;
+      border: 1px black solid;
     }
 
     ul {
@@ -25,11 +26,11 @@ export default function UserCard({ utilisateur }) {
     <Card>
       <div className="container">
         <ul>
-          <li>{utilisateur.nom}</li>
-          <li>{utilisateur.prenom}</li>
-          <li>{utilisateur.telephone}</li>
-          <li>{utilisateur.email}</li>
-          <li>{utilisateur.profession}</li>
+          <li>Nom: {utilisateur.nom}</li>
+          <li>Prénom: {utilisateur.prenom}</li>
+          <li>Téléphone: {utilisateur.telephone}</li>
+          <li>E-mail: {utilisateur.email}</li>
+          <li>Profession: {utilisateur.profession}</li>
         </ul>
       </div>
     </Card>
