@@ -14,3 +14,9 @@ section {
   align-items: center;
   justify-content: space-around;
 }
+
+#utilisateurs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
