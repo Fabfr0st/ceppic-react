@@ -6,6 +6,7 @@ import Connexion from "./Connexion";
 import Voiture from "./Voiture";
 import Citation from "./Citations";
 import Users from "./Users";
+import RandomUser from "./RandomUser";
 
 export default function Content() {
   return (
@@ -28,6 +29,7 @@ export default function Content() {
       />
       <Citation />
       <Users />
+      <RandomUser />
     </section>
   );
 }
