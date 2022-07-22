@@ -11,7 +11,7 @@ export default function Compteur({ increment, starter, text }) {
     <section className="compteur">
       <div>
         <p>Vous avez appuyé sur le bouton ci dessous {count} fois</p>
-        {count >= 50 ? <p>{text}</p> : <p></p>}
+        {count >= 50 ? <p>{text}</p> : <></>}
         <button onClick={handleIncrement}>
           Incrémenter {increment} par {increment}
         </button>
