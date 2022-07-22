@@ -5,6 +5,7 @@ import Calcul from "./Calcul";
 import Connexion from "./Connexion";
 import Voiture from "./Voiture";
 import Citation from "./Citations";
+import Users from "./Users";
 
 export default function Content() {
   return (
@@ -26,6 +27,7 @@ export default function Content() {
         }
       />
       <Citation />
+      <Users />
     </section>
   );
 }
