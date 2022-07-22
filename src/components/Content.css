@@ -15,7 +15,8 @@ section {
   justify-content: space-around;
 }
 
-#utilisateurs {
+#utilisateurs,
+.randomUsers {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

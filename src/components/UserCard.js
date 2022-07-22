@@ -21,6 +21,11 @@ export default function UserCard({ utilisateur }) {
       padding: 2px 16px;
       margin: 1rem;
     }
+
+    .container:hover {
+      padding: 2px 16px;
+      margin: 1rem;
+    }
   `;
 
   return (
