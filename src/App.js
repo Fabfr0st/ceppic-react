@@ -13,13 +13,13 @@ import NotFound from "./components/NotFound";
 function App() {
   return (
     <div className="App">
+      <Nav />
       <Routes>
         <Route path="*" element={<NotFound />} />
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
       </Routes>
-      <Nav />
       <Header logo={minsc} />
       <main>
         <Content />
