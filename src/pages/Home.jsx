@@ -1,7 +1,12 @@
+import Content from "../components/Content";
+
 export default function Home() {
   return (
-    <div className="home">
-          <h1>Home</h1>
-    </div>
+    <main>
+      <div className="home">
+        <Content />
+        <h1>Home</h1>
+      </div>
+    </main>
   );
 }
