@@ -7,6 +7,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
+import Nav from "./components/Nav";
 
 function App() {
   return (
@@ -16,10 +17,7 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
       </Routes>
-      <nav>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
-      </nav>
+      <Nav />
       <Header logo={minsc} />
       <main>
         <Content />
