@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Nav from "./components/Nav";
 import NotFound from "./components/NotFound";
+import ListeMessages from "./pages/ListeMessages";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="listeMessages" element={<ListeMessages />} />
       </Routes>
       <Footer />
     </div>
