@@ -1,8 +1,22 @@
 {
-  "contacts": {
-    "nom":"",
-    "email":"",
-    "message":"",
-    "id":"1"
-  }
+  "contacts": [
+    {
+      "nom": "",
+      "email": "",
+      "message": "",
+      "id": 1
+    },
+    {
+      "nom": "Lastère",
+      "email": "lastere.fabien@gmail.com",
+      "message": "xwcxwcx",
+      "id": 2
+    },
+    {
+      "nom": "Durand",
+      "email": "michelD@gmail.com",
+      "message": "message",
+      "id": 3
+    }
+  ]
 }
