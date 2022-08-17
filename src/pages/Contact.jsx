@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useState } from "react";
 
 export default function Contact() {
@@ -8,9 +9,17 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const contacts = [nom, email, message];
-    console.log(contacts);
-    setSubmitted(true);
+    const contacts = { nom, email, message };
+    // console.log(contacts);
+    axios
+      .post("http://localhost:4517/contacts", contacts)
+      .then((reponse) => {
+        console.log(reponse);
+        setSubmitted(true);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   if (submitted) {
