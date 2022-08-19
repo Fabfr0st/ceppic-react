@@ -2,12 +2,14 @@ import "./Footer.css";
 
 export default function Footer() {
   const CurrentYear = () => {
-    return new Date().getFullYear()
-  }
-  
+    return new Date().getFullYear();
+  };
+
   return (
-    <footer>
+    <>
+      <footer>
         <p>Boo Hamster géant de l'espace miniature &copy; - {CurrentYear()}</p>
-    </footer>
+      </footer>
+    </>
   );
 }

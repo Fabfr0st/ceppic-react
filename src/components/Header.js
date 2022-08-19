@@ -1,4 +1,3 @@
-// import "./Header.css"
 import styled from "styled-components";
 
 export default function Header({ logo }) {
@@ -21,9 +20,11 @@ export default function Header({ logo }) {
   `;
 
   return (
-    <Entete>
-      <Logo src={logo} alt={MinscDesc}></Logo>
-      <Title>Rôdeur le plus connu de Faerûn</Title>
-    </Entete>
+    <>
+      <Entete>
+        <Logo src={logo} alt={MinscDesc}></Logo>
+        <Title>Rôdeur le plus connu de Faerûn</Title>
+      </Entete>
+    </>
   );
 }
